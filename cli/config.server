@@ -1,0 +1,30 @@
+#
+# The server creates one single object adapter with the name
+# "Cli.Server". The following line sets the endpoints for this
+# adapter.
+#
+#Cli.Server.Endpoints=tcp -h 127.0.0.1 -p 10001
+Cli.Server.Endpoints=tcp -h 10.0.0.101 -p 10001
+
+#
+# Warn about connection exceptions
+#
+Ice.Warn.Connections=1
+
+#
+# Network Tracing
+#
+# 0 = no network tracing
+# 1 = trace connection establishment and closure
+# 2 = like 1, but more detailed
+# 3 = like 2, but also trace data transfer
+#
+Ice.Trace.Network=0
+
+#
+# Protocol Tracing
+#
+# 0 = no protocol tracing
+# 1 = trace protocol messages
+#
+Ice.Trace.Protocol=0

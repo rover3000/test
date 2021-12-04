@@ -1,0 +1,36 @@
+#
+# The client reads this property to create the reference to the
+# "cliserver" object in the server.
+#
+CliServer.Proxy=CliServer:tcp -h 127.0.0.1 -p 65000
+#CliServer.Proxy=CliServer:tcp -h 10.0.0.101 -p 10001
+
+# The client creates one single object adapter with the name
+# "clioutcallback.lient". The following line sets the endpoints for this
+# adapter.
+#
+clioutcallback.lient.Endpoints=default
+
+#
+# Warn about connection exceptions
+#
+Ice.Warn.Connections=1
+
+#
+# Network Tracing
+#
+# 0 = no network tracing
+# 1 = trace connection establishment and closure
+# 2 = like 1, but more detailed
+# 3 = like 2, but also trace data transfer
+Ice.Trace.Network=2
+
+#
+# Protocol Tracing
+#
+# 0 = no protocol tracing
+# 1 = trace protocol messages
+#
+Ice.Trace.Protocol=1
+
+Ice.ACM.Client = 0
